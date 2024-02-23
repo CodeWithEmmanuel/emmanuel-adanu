@@ -1,0 +1,12 @@
+{
+  "name": "emmanuel-adanu",
+  "version": "1.0.0",
+  "description": "one page portfolio site",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "emmanuel adanu"
+  ],
+  "author": "Emmanuel Adanu",
+  "license": "ISC"
+}

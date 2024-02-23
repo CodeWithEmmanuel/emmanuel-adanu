@@ -1,0 +1,130 @@
+footer {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 20px;
+  gap: 50px;
+}
+
+.form {
+  width: 100%;
+}
+#form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: start;
+}
+
+#form input {
+  width: 90%;
+  min-height: 45px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  display: flex;
+  align-items: start;
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+#form input:focus {
+  outline: none;
+}
+#form input::placeholder {
+  text-transform: uppercase;
+  padding-left: 15px;
+}
+
+#message-input {
+  width: 90%;
+  min-height: 200px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+#message-input::placeholder {
+  text-transform: uppercase;
+  padding-left: 15px;
+  font-size: 2rem;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+#message-input:focus {
+  outline: none;
+}
+
+#form button {
+  width: 180px;
+  height: 50px;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #4ee1a0;
+  border: 1px solid #4ee1a0;
+  border-radius: 5px;
+  background-color: transparent;
+  transition: all 0.15s;
+  cursor: pointer;
+}
+
+#form button:hover {
+  background-color: #4ee1a0;
+  color: #151515;
+  transform: scale(1.1);
+}
+
+#form button:active {
+  opacity: 0.5;
+}
+.copy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 20px auto;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.copy p {
+  text-align: right;
+  font-size: 1.2rem;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-icons img {
+  width: 20px;
+}
+
+.contact-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+
+.contact-section-header {
+  gap: 30px;
+}
+@media screen and (min-width: 950px) {
+  .contact-section {
+    flex-direction: row;
+    align-items: start;
+    margin-bottom: 50px;
+  }
+
+  .contact-section-header {
+    place-items: start;
+  }
+}

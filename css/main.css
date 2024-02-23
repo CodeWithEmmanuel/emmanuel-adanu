@@ -1,0 +1,376 @@
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(7 1fr);
+  gap: 100px;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: center;
+  gap: 30px;
+  height: 100vh;
+  justify-content: center;
+}
+
+.my-pic {
+  width: 55%;
+  min-height: 20em;
+  display: grid;
+  place-items: end;
+  position: relative;
+  border: none;
+}
+
+.my-pic img {
+  width: 100%;
+  object-fit: contain;
+  object-position: top;
+  transition: all 0.3s;
+}
+
+#img-cd {
+  display: none;
+}
+
+.my-pic:hover #img-cd {
+  display: block;
+}
+
+.my-pic:hover #img-bw {
+  display: none;
+}
+
+.my-pic:hover .my-pic-bg {
+  background-image: linear-gradient(to bottom, #151515, #151515, #4ee1a0);
+  opacity: 0.6;
+}
+.my-pic-bg {
+  background-color: #979797;
+  background-image: linear-gradient(to bottom, #000000, #000000, #979797);
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  top: -500px;
+  z-index: -10;
+  border: none;
+  opacity: 0.1;
+  transition: all 0.3s;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+  gap: 30px;
+}
+
+.about-me h2 {
+  font-size: 3.5em;
+  line-height: 1.2;
+}
+
+.about-me h2 span,
+.section-header h2 {
+  border-bottom: 3.5px solid #4ee1a0;
+}
+
+.about-me p {
+  font-size: 1.9rem;
+  line-height: 1.4;
+}
+
+.nav-links,
+.item-links {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
+}
+
+.nav-links div {
+  transition: all 0.2;
+  cursor: pointer;
+}
+.nav-links div:hover {
+  transform: scale(1.1);
+}
+.about-me a:link,
+.about-me a:visited,
+.item-links a:link,
+.item-links a:visited,
+.video-item-title a:link,
+.video-item-title a:visited {
+  text-transform: uppercase;
+  font-size: 2.3rem;
+  text-decoration: none;
+  color: #ffffff;
+  transition: all 0.15s;
+  cursor: pointer;
+}
+
+.about-me a:hover,
+.item-links a:hover,
+.video-item-title a:hover {
+  color: #4ee1a0;
+}
+
+.about-me a:active,
+.item-links a:active {
+  opacity: 0.5;
+}
+
+.contact-link,
+.projects-link,
+.videos-link,
+.item-links div {
+  border-bottom: 3.5px solid #4ee1a0;
+  padding-bottom: 8px;
+}
+
+.skills-section {
+  min-height: 50vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 1fr;
+  gap: 20px;
+}
+
+.section-header {
+  width: 100%;
+  display: grid;
+  place-items: start;
+  font-size: 2.5rem;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+.stacks {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 60%;
+}
+
+.stack-item {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.stack-item p {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.stack-item img {
+  width: 45%;
+}
+
+.stack-item:hover {
+  transform: scale(1.3);
+}
+
+.stack-item:hover p {
+  color: #4ee1a0;
+}
+
+.section-line {
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff;
+}
+
+.reviews-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.review p,
+.contact-message {
+  font-size: 1.8rem;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.review h3 {
+  text-align: left;
+  font-size: 1.6rem;
+  margin-top: 15px;
+  color: #4ee1a0;
+}
+
+.projects-section,
+.videos-section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.project-item,
+.video-item {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: all 0.3s;
+}
+
+.video-item {
+  min-height: 350px;
+}
+
+.item-thumbnail img {
+  width: 100%;
+}
+
+.item-title {
+  width: 100%;
+  text-align: left;
+  font-size: 1.7rem;
+}
+.video-item-title a:link,
+.video-item-title a:visited {
+  font-size: 1.5rem;
+  text-transform: none;
+}
+.item-description {
+  display: flex;
+  gap: 10px;
+  font-size: 1.8rem;
+}
+
+.item-links {
+  flex-direction: row;
+  align-items: start;
+  justify-content: start;
+}
+
+.item-links div {
+  font-size: 2rem;
+}
+
+.item-thumbnail {
+  width: 100%;
+}
+.video-item iframe {
+  border-radius: 8px;
+  width: 100%;
+  min-height: 220px;
+  position: relative;
+}
+
+@media screen and (min-width: 950px) {
+  .hero-section {
+    flex-direction: row-reverse;
+    text-align: left;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .about-me {
+    gap: 40px;
+    align-items: start;
+    justify-content: center;
+  }
+  .about-me h2 {
+    width: 100%;
+    font-size: 5em;
+  }
+
+  .about-me p {
+    width: 75%;
+    font-size: 2.5rem;
+  }
+  .my-pic {
+    height: 70em;
+    width: 40%;
+  }
+
+  .my-pic-bg {
+    background-image: none;
+    background-color: #979797;
+  }
+
+  .my-pic:hover .my-pic-bg {
+    background-image: none;
+    background-color: #4ee1a0;
+    opacity: 0.8;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    width: 40%;
+  }
+
+  .section-header {
+    font-size: 3.5rem;
+    place-items: center;
+  }
+
+  .items {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+  }
+
+  .stacks {
+    height: 40%;
+  }
+  .stack-item {
+    width: 22em;
+  }
+
+  .stack-item img {
+    width: 45%;
+  }
+
+  .reviews,
+  .contact-form {
+    align-items: start;
+  }
+
+  .review,
+  .contact-message {
+    width: 80%;
+  }
+
+  .project-item,
+  .video-item {
+    max-width: 400px;
+  }
+  .project-item:hover {
+    transform: scale(1.1);
+  }
+  .video {
+    gap: 10px;
+  }
+}
